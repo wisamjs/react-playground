@@ -30,7 +30,6 @@
     "reselect": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^6.26.3",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^23.6.0",
@@ -45,6 +44,7 @@
     "file-loader": "^0.11.2",
     "image-loader": "0.0.1",
     "image-webpack-loader": "^3.3.1",
+    "jest-fetch-mock": "^2.1.0",
     "raw-loader": "^0.5.1",
     "react-router-dom": "^4.3.1",
     "react-test-renderer": "^15.5.2",
@@ -53,5 +53,9 @@
     "webpack": "^3.1.0",
     "webpack-dev-middleware": "^1.11.0",
     "webpack-hot-middleware": "^2.18.2"
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": ["./setupJest.js"]
   }
 }
